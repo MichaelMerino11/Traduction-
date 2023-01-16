@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Icono/sitio-web.png</file>
+        <file>Icono/disquete.png</file>
+    </qresource>
+</RCC>
