@@ -1,23 +1,19 @@
 #include "principal.h"
 #include "ui_principal.h"
-
-
 #include "QDebug"
-
 Principal::Principal(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::Principal)
 {
     ui->setupUi(this);
-    setWindowTitle("Agenda telefónica");
+    setWindowTitle(tr("Agenda telefónica"));
     // Configurar la tabla
     ui->tblLista->setColumnCount(4);
     QStringList titulo;
-    titulo << "Nombre" << "Apellido" << "Teléfono" << "E-mail";
+    titulo << tr("Nombre")<< tr("Apellido") << tr("Teléfono") << tr("Correo");
     ui->tblLista->setHorizontalHeaderLabels(titulo);
     // Leer desde el archivo
     cargarContactos();
-
 }
 
 Principal::~Principal()
@@ -30,7 +26,7 @@ void Principal::on_btnAgregar_clicked()
 {
     // Crear y mostrar el dialogo
     PersonaDialog pd(this);
-    pd.setWindowTitle("Agregar contacto");
+    pd.setWindowTitle(tr("Agregar contacto"));
     // Abrir la ventana y evaluar respuesta
     int res = pd.exec();
     if (res == QDialog::Rejected){
@@ -54,7 +50,7 @@ void Principal::on_btnGuardar_clicked()
     // Verificar que exista datos para guardar
     int filas = ui->tblLista->rowCount();
     if (filas == 0){
-        QMessageBox::warning(this,"Guardar contactos","Agenda sin datos para guardar");
+        QMessageBox::warning(this,tr("Guardar contactos"),tr("Agenda sin datos para guardar"));
         return;
     }
     // Abrir el archivo y guardar
@@ -71,9 +67,9 @@ void Principal::on_btnGuardar_clicked()
             salida << telefono->text() << ";" << email->text() << "\n";
         }
         archivo.close();
-        QMessageBox::information(this,"Guardar contactos","Contactos guardados con éxito");
+        QMessageBox::information(this,tr("Guardar contactos"),tr("Contactos guardados con éxito"));
     }else{
-        QMessageBox::critical(this,"Guardar contactos", "No se puede escribir sobre " + ARCHIVO);
+        QMessageBox::critical(this,tr("Guardar contactos"), tr("No se puede escribir sobre ") + ARCHIVO);
     }
 
 }
@@ -108,7 +104,7 @@ void Principal::cargarContactos()
 void Principal::on_tblLista_cellClicked(int row)
 {
     editpersona ep(this);
-    ep.setWindowTitle("Editar contacto");
+    ep.setWindowTitle(tr("Editar contacto"));
     int res = ep.exec();
     if(res == QDialog::Rejected)
         return;
