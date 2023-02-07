@@ -1,10 +1,11 @@
 #ifndef EDIT_H
 #define EDIT_H
-
+#include <QTranslator>
 #include <QDialog>
 #include <QMessageBox>
 #include "persona.h"
 #include "personadialog.h"
+
 
 namespace Ui {
 class editpersona;

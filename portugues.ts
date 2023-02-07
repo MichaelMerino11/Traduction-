@@ -6,7 +6,7 @@
     <message>
         <location filename="personadialog.ui" line="14"/>
         <source>Dialog</source>
-        <translation>Diálogo</translation>
+        <translation>Adicionar</translation>
     </message>
     <message>
         <location filename="personadialog.ui" line="28"/>
@@ -26,7 +26,7 @@
     <message>
         <location filename="personadialog.ui" line="80"/>
         <source>E-mail:</source>
-        <translation>O email:</translation>
+        <translation>Correio:</translation>
     </message>
 </context>
 <context>
@@ -34,12 +34,12 @@
     <message>
         <location filename="principal.ui" line="34"/>
         <source>Principal</source>
-        <translation>Diretor</translation>
+        <translation>Principal</translation>
     </message>
     <message>
         <location filename="principal.ui" line="94"/>
         <source>Guardar</source>
-        <translation>Guarda</translation>
+        <translation>Manter</translation>
     </message>
     <message>
         <location filename="principal.ui" line="108"/>
@@ -54,22 +54,22 @@
     <message>
         <location filename="principal.cpp" line="13"/>
         <source>Nombre</source>
-        <translation>Nome:</translation>
+        <translation>Nome</translation>
     </message>
     <message>
         <location filename="principal.cpp" line="13"/>
         <source>Apellido</source>
-        <translation>Sobrenome:</translation>
+        <translation>Sobrenome</translation>
     </message>
     <message>
         <location filename="principal.cpp" line="13"/>
         <source>Teléfono</source>
-        <translation>Telefone:</translation>
+        <translation>Telefone</translation>
     </message>
     <message>
         <location filename="principal.cpp" line="13"/>
         <source>Correo</source>
-        <translation>O email:</translation>
+        <translation>Correio</translation>
     </message>
     <message>
         <location filename="principal.cpp" line="29"/>
@@ -96,7 +96,7 @@
     <message>
         <location filename="principal.cpp" line="72"/>
         <source>No se puede escribir sobre </source>
-        <translation>Não posso escrever sobre</translation>
+        <translation>Não posso escrever sobre </translation>
     </message>
     <message>
         <location filename="principal.cpp" line="107"/>
@@ -109,12 +109,12 @@
     <message>
         <location filename="edit.ui" line="29"/>
         <source>Dialog</source>
-        <translation>Diálogo</translation>
+        <translation>Editar</translation>
     </message>
     <message>
         <location filename="edit.ui" line="49"/>
         <source>Menu Editar</source>
-        <translation>Editar menu</translation>
+        <translation>Menu de edição</translation>
     </message>
     <message>
         <location filename="edit.ui" line="68"/>
@@ -134,7 +134,7 @@
     <message>
         <location filename="edit.ui" line="125"/>
         <source>Email:</source>
-        <translation>O email:</translation>
+        <translation>Correio:</translation>
     </message>
 </context>
 </TS>

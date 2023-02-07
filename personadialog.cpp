@@ -1,5 +1,6 @@
 #include "personadialog.h"
 #include "ui_personadialog.h"
+#include <QTranslator>
 
 PersonaDialog::PersonaDialog(QWidget *parent) :
     QDialog(parent),
@@ -24,17 +25,17 @@ void PersonaDialog::on_buttonBox_accepted()
 
     QMessageBox adv;
     adv.setIcon(QMessageBox::Warning);
-    adv.setWindowTitle("Registro de informacion");
+    adv.setWindowTitle(tr("Registro de informacion"));
 
     if(nombre.isEmpty()&&apellido.isEmpty()&&telefono.isEmpty()&&email.isEmpty())
     {
-        adv.setText("No existen registros de datos"); adv.exec();
+        adv.setText(tr("No existen registros de datos")); adv.exec();
         return;
     }
 
     if(nombre.isEmpty() || apellido.isEmpty() || telefono.isEmpty() || email.isEmpty())
     {
-        adv.setText("No existen registros de datos"); adv.exec();
+        adv.setText(tr("No existen registros de datos")); adv.exec();
         return;
     }
 
@@ -42,7 +43,7 @@ void PersonaDialog::on_buttonBox_accepted()
     {
         if(nombre[i].isDigit())
         {
-            adv.setText("Se ha producido un error. Registre nuevamente el Nombre"); adv.exec();
+            adv.setText(tr("Se ha producido un error. Registre nuevamente el Nombre")); adv.exec();
             return;
         }
     }
@@ -51,7 +52,7 @@ void PersonaDialog::on_buttonBox_accepted()
     {
         if(apellido[i].isDigit())
         {
-            adv.setText("Se ha producido un error. Registre nuevamente el Apellido"); adv.exec();
+            adv.setText(tr("Se ha producido un error. Registre nuevamente el Apellido")); adv.exec();
             return;
         }
     }
@@ -60,7 +61,7 @@ void PersonaDialog::on_buttonBox_accepted()
     {
         if(!telefono[i].isDigit())
         {
-            adv.setText("Se ha producido un error. Registre nuevamente el Telefono"); adv.exec();
+            adv.setText(tr("Se ha producido un error. Registre nuevamente el Telefono")); adv.exec();
             return;
         }
     }
@@ -79,7 +80,7 @@ void PersonaDialog::on_buttonBox_accepted()
 
     if(!valid)
     {
-        adv.setText("Se ha producido un error. Registre nuevamente el Correo"); adv.exec();
+        adv.setText(tr("Se ha producido un error. Registre nuevamente el Correo")); adv.exec();
         return;
     }
 

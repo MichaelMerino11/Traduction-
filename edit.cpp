@@ -1,5 +1,6 @@
 #include "edit.h"
 #include "ui_edit.h"
+#include <QTranslator>
 
 editpersona::editpersona(QWidget *parent) :
     QDialog(parent),

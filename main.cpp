@@ -1,7 +1,6 @@
 #include "principal.h"
 #include <QTranslator>
 #include <QInputDialog>
-
 #include <QApplication>
 
 int main(int argc, char *argv[])
@@ -23,6 +22,7 @@ int main(int argc, char *argv[])
     if(lang!="Español"){
         a.installTranslator(&T);
     }
+    a.setStyle("fusion");
     Principal w;
     w.show();
     return a.exec();

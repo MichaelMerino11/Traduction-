@@ -1,4 +1,5 @@
 #include "persona.h"
+#include <QTranslator>
 
 Persona::Persona(QObject *parent)
     : QObject{parent}

@@ -1,6 +1,6 @@
 #ifndef PRINCIPAL_H
 #define PRINCIPAL_H
-
+#include <QTranslator>
 #include <QWidget>
 #include <QFile>
 #include <QMessageBox>

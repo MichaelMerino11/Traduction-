@@ -1,6 +1,6 @@
-    #ifndef PERSONA_H
+#ifndef PERSONA_H
 #define PERSONA_H
-
+#include <QTranslator>
 #include <QObject>
 
 class Persona : public QObject

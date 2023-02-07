@@ -1,6 +1,6 @@
 #ifndef PERSONADIALOG_H
 #define PERSONADIALOG_H
-
+#include <QTranslator>
 #include <QDialog>
 #include <QMessageBox>
 #include "persona.h"

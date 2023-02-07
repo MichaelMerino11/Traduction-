@@ -1,6 +1,8 @@
 #include "principal.h"
 #include "ui_principal.h"
 #include "QDebug"
+#include <QTranslator>
+
 Principal::Principal(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::Principal)
